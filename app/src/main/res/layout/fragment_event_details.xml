@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDetailsFragment"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventDetailsImageLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/eventDetailsImageView"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+
+            />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventDetailsPrviLinear"
+        android:layout_below="@id/eventDetailsImageLayout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsEventaNaziv"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/gafata"
+            android:textSize="30sp"
+            />
+</RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsObjekat"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/gafata"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsEventaDatum"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/gafata"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsEventaOpis"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/gafata"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+
+            />
+
+
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="35dp"
+    android:layout_alignParentBottom="true"
+    >
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="ZAINTERESOVAN"
+        android:theme="@style/AppTheme.Button"
+        android:background="@drawable/button_background"
+        android:id="@+id/ZainteresovanButton"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="IDEM"
+android:layout_marginLeft="50dp"
+        android:theme="@style/AppTheme.Button"
+        android:background="@drawable/button_background"
+        android:id="@+id/IdemButton"
+        />
+
+</LinearLayout>
+
+</RelativeLayout>

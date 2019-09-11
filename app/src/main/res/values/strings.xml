@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Evente</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="noResult">Nema rezultata</string>
+    <string name="errorMsgFriendly">Doslo je do greske, pokusajte kasnije</string>
+    <string name="search">Pretraga</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="errMsgFieldReq">Obavezno polje</string>
+    <string name="errorMsgEmailNotValid">Email nije validan</string>
+    <string name="errorMsgMaxLen20">Maksimalno 20 karaktera</string>
+    <string name="errorMsgMaxLen50">Maksimalno 50 karaktera</string>
+    <string name="errorMsgPasswordLength">Minimalno 8 karaktera</string>
+</resources>

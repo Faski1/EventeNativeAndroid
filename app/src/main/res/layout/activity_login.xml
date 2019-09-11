@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/evente"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="1dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/loginLinearLay"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    >
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/loginKorImeInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="35dp"
+        app:hintEnabled="false"
+        android:gravity="center"
+        >
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="Korisničko ime"
+        android:textColorHint="@android:color/white"
+        android:inputType="textPersonName"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/loginPwInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="35dp"
+        app:hintEnabled="false"
+        android:gravity="center"
+        >
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Lozinka"
+        android:textColorHint="@android:color/white"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        >
+    <android.support.v7.widget.CardView
+        android:id="@+id/loginCardView"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prijava"
+                android:textColor="#fff"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrujte se"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

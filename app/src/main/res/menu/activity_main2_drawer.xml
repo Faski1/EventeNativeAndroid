@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pocetna"
+            android:icon="@drawable/home"
+            android:title="Početna" />
+        <item android:title="Moj izbor" >
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item android:id="@+id/nav_Zainteresovan" android:title="Zainteresovan" android:icon="@drawable/interested"/>
+                    <item android:id="@+id/nav_Idem" android:title="Idem" android:icon="@drawable/going"/>
+                </group>
+            </menu>
+        </item>
+
+    <item android:title="Pretrage">
+        <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_popularni"
+                android:icon="@drawable/fire"
+                android:title="Popularni" />
+            <item
+                android:id="@+id/nav_novi"
+                android:icon="@drawable/sun"
+                android:title="Novi" />
+            <item
+                android:id="@+id/nav_izdvojeni"
+                android:icon="@drawable/award"
+                android:title="Izdvojeni" />
+        </group>
+        </menu>
+    </item>
+
+    <item android:title="Kategorije">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_muzicki"
+                android:icon="@drawable/playbutton"
+                android:title="Muzički" />
+            <item
+                android:id="@+id/nav_kulturni"
+                android:icon="@drawable/museum"
+                android:title="Kulturni" />
+            <item
+                android:id="@+id/nav_sportski"
+                android:icon="@drawable/running"
+                android:title="Sportski" />
+            </group>
+        </menu>
+    </item>
+<item android:title="Odjava">
+    <menu>
+    <item android:title="Odjava"
+        android:id="@+id/nav_odjava"
+        android:icon="@drawable/logout"
+        >
+    </item>
+    </menu>
+</item>
+    </group>
+</menu>
